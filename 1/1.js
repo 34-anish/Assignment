@@ -7,16 +7,15 @@ const clickHandler = () => {
 
   document.body.appendChild(document.createElement("p"));
   document.querySelector("body p:last-child").id = "product";
-  document.querySelector("#product").innerHTML = `Product IS: ${
-    number1 * number2
-  } `;
+  document.querySelector("#product").innerHTML =
+    `${number1} * ${number2}:` + "<b>" + ` ${number1 * number2}` + "</b>";
   document.body.appendChild(document.createElement("p"));
   document.querySelector("body p:last-child").id = "power";
-  document.querySelector("#power").innerHTML = ` Power IS: ${Math.pow(
-    number1,
-    number2
-  )} `;
-
+  document.querySelector("#power").innerHTML =
+    `${number1} ^ ${number2}:` +
+    "<b>" +
+    ` ${Math.pow(number1, number2)}` +
+    "</b>";
   // document.write(
   //   // document.write('<p id="jstext">' + number + '</p>')
   //   " <h1 id ='sum'>" + `Sum is ${number1 + number2}` + "</h1>"

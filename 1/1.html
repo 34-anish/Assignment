@@ -8,12 +8,20 @@
     <title>1st</title>
   </head>
   <body>
-    <input type="text" id="text1" placeholder="Enter the first number" />
-    <input type="text" id="text2" placeholder="Enter the second number" />
-    <br />
-    <button onClick="clickHandler()">Click here</button>
+    <div class="textWrapper">
+      <div class="textOne">
+        <label for="text1">First Number</label>
+        <input type="text" id="text1" placeholder="Enter the first number" />
+      </div>
+      <div class="textTwo">
+        <label for="text2">Second Number</label>
 
-    <span id="result"></span>
+        <input type="text" id="text2" placeholder="Enter the second number" />
+      </div>
+      <button onClick="clickHandler()">Click here</button>
+    </div>
+
+    <!-- <span id="result"></span> -->
     <script src="./1.js"></script>
   </body>
 </html>

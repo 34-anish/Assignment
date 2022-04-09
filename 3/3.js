@@ -9,6 +9,7 @@ while (arr[i] !== "") {
 }
 arr.pop();
 console.log(arr);
-document.write(arr.length);
-document.write(Math.min.apply(Math, arr));
-document.write(Math.max.apply(Math, arr));
+document.write(`Numbers entered: ${arr}` + "<br/>");
+document.write(`Total Numbers entered: ${arr.length}` + "<br/>");
+document.write("Minimum is:" + Math.min.apply(Math, arr) + "<br/>");
+document.write("Maximum is:" + Math.max.apply(Math, arr));
